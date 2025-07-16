@@ -1,0 +1,77 @@
+Jul-17 00:11:20.649 [main] DEBUG nextflow.cli.Launcher - $> nextflow run hello-world.nf
+Jul-17 00:11:20.687 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.06.0-edge
+Jul-17 00:11:20.700 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/pditommaso/.nextflow/plugins; core-plugins: nf-amazon@3.0.0,nf-azure@1.18.0,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.22.1,nf-k8s@1.1.0,nf-tower@1.13.0,nf-wave@1.14.0
+Jul-17 00:11:20.717 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jul-17 00:11:20.717 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jul-17 00:11:20.718 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Jul-17 00:11:20.723 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jul-17 00:11:20.752 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Jul-17 00:11:20.761 [main] DEBUG nextflow.cli.CmdRun - Launching `hello-world.nf` [shrivelled_stone] DSL2 - revision: 5fc0210d2a
+Jul-17 00:11:20.761 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[nf-amazon@3.0.0]
+Jul-17 00:11:20.762 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[nf-amazon@3.0.0, nf-tower@1.13.0]
+Jul-17 00:11:20.763 [main] DEBUG nextflow.plugin.PluginUpdater - Installing plugin nf-amazon version: 3.0.0
+Jul-17 00:11:20.771 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-amazon@3.0.0' resolved
+Jul-17 00:11:20.771 [main] INFO  org.pf4j.AbstractPluginManager - Start plugin 'nf-amazon@3.0.0'
+Jul-17 00:11:20.810 [main] DEBUG nextflow.plugin.BasePlugin - Plugin started nf-amazon@3.0.0
+Jul-17 00:11:20.820 [main] DEBUG nextflow.file.FileHelper - > Added 'S3FileSystemProvider' to list of installed providers [s3]
+Jul-17 00:11:20.821 [main] DEBUG nextflow.plugin.PluginUpdater - Installing plugin nf-tower version: 1.13.0
+Jul-17 00:11:20.822 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-tower@1.13.0' resolved
+Jul-17 00:11:20.822 [main] INFO  org.pf4j.AbstractPluginManager - Start plugin 'nf-tower@1.13.0'
+Jul-17 00:11:20.828 [main] DEBUG nextflow.plugin.BasePlugin - Plugin started nf-tower@1.13.0
+Jul-17 00:11:20.857 [main] DEBUG nextflow.Session - Session UUID: c6855bf7-5ac6-47f1-afe9-547c8204aa2e
+Jul-17 00:11:20.857 [main] DEBUG nextflow.Session - Run name: shrivelled_stone
+Jul-17 00:11:20.857 [main] DEBUG nextflow.Session - Executor pool size: 11
+Jul-17 00:11:20.861 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jul-17 00:11:20.864 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=33; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jul-17 00:11:20.878 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 25.06.0-edge build 5950
+  Created: 06-07-2025 13:56 UTC (15:56 CEST)
+  System: Mac OS X 15.5
+  Runtime: Groovy 4.0.27 on OpenJDK 64-Bit Server VM 21+35
+  Encoding: UTF-8 (UTF-8)
+  Process: 97377@Paolos-MacBook-Pro.local [127.0.0.1]
+  CPUs: 11 - Mem: 36 GB (113 MB) - Swap: 0 (0)
+Jul-17 00:11:20.883 [main] DEBUG nextflow.Session - Work-dir: /Users/pditommaso/Projects/mcp-test/work [Mac OS X]
+Jul-17 00:11:20.884 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/pditommaso/Projects/mcp-test/bin
+Jul-17 00:11:20.904 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[AwsBatchExecutor]
+Jul-17 00:11:20.910 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jul-17 00:11:20.912 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+Jul-17 00:11:20.913 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Jul-17 00:11:20.924 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jul-17 00:11:20.928 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 12; maxThreads: 1000
+Jul-17 00:11:20.954 [main] DEBUG nextflow.Session - Session start
+Jul-17 00:11:21.175 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jul-17 00:11:21.180 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/pditommaso/.nextflow/secrets/store.json
+Jul-17 00:11:21.183 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@70d77826] - activable => nextflow.secret.LocalSecretsProvider@70d77826
+Jul-17 00:11:21.198 [main] INFO  nextflow.script.BaseScript - Running Hello World pipeline
+Jul-17 00:11:21.198 [main] INFO  nextflow.script.BaseScript - Greeting: Hello World!
+Jul-17 00:11:21.198 [main] INFO  nextflow.script.BaseScript - Name: Nextflow
+Jul-17 00:11:21.236 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jul-17 00:11:21.236 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jul-17 00:11:21.237 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jul-17 00:11:21.240 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=11; memory=36 GB; capacity=11; pollInterval=100ms; dumpInterval=5m
+Jul-17 00:11:21.242 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Jul-17 00:11:21.256 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'sayHello': maxForks=0; fair=false; array=0
+Jul-17 00:11:21.288 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: sayHello
+Jul-17 00:11:21.289 [main] DEBUG nextflow.Session - Igniting dataflow network (2)
+Jul-17 00:11:21.289 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > sayHello
+Jul-17 00:11:21.290 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_00c395cb286c26b9: /Users/pditommaso/Projects/mcp-test/hello-world.nf
+Jul-17 00:11:21.290 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Jul-17 00:11:21.290 [main] DEBUG nextflow.Session - Session await
+Jul-17 00:11:21.346 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jul-17 00:11:21.347 [Task submitter] INFO  nextflow.Session - [98/a43e7f] Submitted process > sayHello (1)
+Jul-17 00:11:21.406 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: sayHello (1); status: COMPLETED; exit: 0; error: -; workDir: /Users/pditommaso/Projects/mcp-test/work/98/a43e7f755b8e5d5d127b0b9c53401c]
+Jul-17 00:11:21.407 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=33; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Jul-17 00:11:21.413 [main] DEBUG nextflow.Session - Session await > all processes finished
+Jul-17 00:11:21.504 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Jul-17 00:11:21.504 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jul-17 00:11:21.506 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Jul-17 00:11:21.508 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=1; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=2ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Jul-17 00:11:21.633 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Jul-17 00:11:21.638 [main] INFO  org.pf4j.AbstractPluginManager - Stop plugin 'nf-tower@1.13.0'
+Jul-17 00:11:21.638 [main] DEBUG nextflow.plugin.BasePlugin - Plugin stopped nf-tower
+Jul-17 00:11:21.638 [main] INFO  org.pf4j.AbstractPluginManager - Stop plugin 'nf-amazon@3.0.0'
+Jul-17 00:11:21.638 [main] DEBUG nextflow.plugin.BasePlugin - Plugin stopped nf-amazon
+Jul-17 00:11:21.639 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Jul-17 00:11:21.639 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
