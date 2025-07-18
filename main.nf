@@ -23,6 +23,8 @@ workflow {
 
 // Define the process
 process sayHello {
+    conda 'conda-forge::procps-ng'
+    
     input:
     val message
 
